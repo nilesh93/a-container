@@ -13,7 +13,7 @@ jobs:
       HASH: $(git rev-parse --short "$GITHUB_SHA")
       BRANCH: main
       SERVICE_NAME: a-container
-      PROJECT_ID: ${{ secrets.PROJECT_ID }}
+      PROJECT_ID: ${{ secrets.GCLOUD_PROJECT_ID }}
 
     steps:
       - name: Checkout
